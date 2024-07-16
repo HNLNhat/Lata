@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">BagStore</string>
+    <string name="app_name">Lata</string>
+    <string name="facebook_app_id">479930867887808</string>
+    <string name="facebook_client_token">00a67b6c7ed78e3ffe5ad6a3bbd6b1a0</string>
 </resources>

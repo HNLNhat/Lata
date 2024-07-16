@@ -1,4 +1,4 @@
-package com.bagstore
+package com.lata_app
 
 import android.app.Application
 import com.facebook.react.PackageList
