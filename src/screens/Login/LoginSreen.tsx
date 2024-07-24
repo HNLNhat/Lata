@@ -119,7 +119,7 @@ const LoginScreen = (props: any) => {
     id: "application-0-bpflbzf",
   });
   GoogleSignin.configure({
-    webClientId: '969375542524-h1ci5rj76mnd5e7hc47p4hh1g29iakcl.apps.googleusercontent.com',
+    webClientId: '866351015855-93hj0ef6h9er4f7er5l3vujtev37tkar.apps.googleusercontent.com',
     scopes: ['profile', 'email', 'openid'],
   });
   // Handle user state changes

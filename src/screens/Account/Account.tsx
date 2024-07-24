@@ -36,9 +36,11 @@ const AccountScreen = ({ navigation }: any) => {
       <Loading />
       <Text style={styles.title}>Tài Khoản</Text>
       <View style={styles.line}></View>
-<View style={{marginTop: 10,backgroundColor: "#00bfff", height: 100, width: 380, borderRadius: 10, }}>
-
-</View>
+      <View style={{ marginTop: 10, backgroundColor: "#00bfff", height: 100, width: 380, borderRadius: 10, }}>
+        <Icon name="person-circle" size={40} color="#fff" />
+        <Text style={styles.headerText}>Chào mừng bạn!</Text>
+        <Text style={styles.headerSubText}>Quản lý tài khoản của bạn ở đây.</Text>
+      </View>
       <View>
         {data.map((item) =>
           <TouchableOpacity disabled={isUser == '' ? true : false} style={styles.button} key={item.id} onPress={() => navigation?.navigate(item.screen)}>
@@ -93,14 +95,26 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     lineHeight: 24,
     letterSpacing: 0.08,
+
   },
   container: {
     width: WIDTH,
     height: HEIGHT,
     paddingTop: PADDING_TOP,
     paddingHorizontal: PADDING_HORIZONTAL
+
   },
-  
+  headerText: {
+    color: '#fff',
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginLeft: 10,
+  },
+  headerSubText: {
+    color: '#fff',
+    fontSize: 14,
+    marginLeft: 10,
+  },
 })
 
 const data = [
